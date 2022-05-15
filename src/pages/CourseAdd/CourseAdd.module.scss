@@ -1,0 +1,23 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCol;
+  gap: 50px;
+
+  .title {
+    color: $primary;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .form {
+    @include flexCol;
+    gap: 20px;
+    align-self: center;
+    width: 50%;
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}

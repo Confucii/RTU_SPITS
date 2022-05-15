@@ -1,0 +1,40 @@
+@import './global.scss';
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: Roboto;
+}
+
+.main {
+  padding: 30px 20px 50px;
+
+  .content {
+    margin: auto;
+    max-width: $mainContainer;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}

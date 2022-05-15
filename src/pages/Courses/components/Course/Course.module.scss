@@ -1,0 +1,39 @@
+@import '../../../../styles/global.scss';
+
+.course {
+  @include flexCol;
+  gap: 5px;
+  border-top: 1px solid rgb(0, 0, 0, 0.2);
+  padding: 20px 0 10px;
+
+  .linkWrapper {
+    @include flexBetween;
+    text-decoration: none;
+
+    .link {
+      text-transform: capitalize;
+      color: $primary;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .arrow {
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid $primary;
+      border-right: 3px solid $primary;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      .link {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .description {
+    font-size: 17px;
+    width: 90%;
+  }
+}

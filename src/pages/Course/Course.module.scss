@@ -1,0 +1,63 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCol;
+  gap: 10px;
+
+  .title {
+    @include flexBetween;
+
+    text-transform: capitalize;
+    color: $primary;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .sections {
+    @include flexCol;
+    gap: 30px;
+
+    .section {
+      @include flexCol;
+      gap: 10px;
+
+      .sectionText {
+        @include flexBetween;
+
+        .sectionTitle {
+          font-size: 22px;
+          font-weight: 600;
+          color: $primary;
+        }
+
+        .link {
+          @include flexCenter;
+          gap: 5px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $primary;
+          font-weight: 500;
+          cursor: pointer;
+
+          &::after {
+            content: '';
+            display: block;
+            border-right: 2px solid $primary;
+            border-bottom: 2px solid $primary;
+            width: 5px;
+            height: 5px;
+            transform: rotate(-45deg);
+          }
+
+          &:hover {
+            color: $primaryLight;
+
+            &::after {
+              border-color: $primaryLight;
+            }
+          }
+        }
+      }
+    }
+  }
+}

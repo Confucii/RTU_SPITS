@@ -1,0 +1,21 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCol;
+  gap: 30px;
+
+  .title {
+    .course {
+      text-transform: capitalize;
+    }
+
+    color: $primary;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .tasks {
+    @include flexCol;
+    gap: 30px;
+  }
+}

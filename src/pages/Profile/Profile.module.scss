@@ -1,0 +1,49 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCol;
+  gap: 30px;
+
+  .title {
+    color: $primary;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .profile {
+    @include flexCol;
+    gap: 10px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    .field {
+      @include flexBetween;
+      width: 100%;
+
+      .name {
+        color: $primary;
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      .value {
+        font-weight: 500;
+        opacity: 0.6;
+      }
+    }
+
+    .withBorder {
+      &:not(:nth-last-child(2)) {
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+      }
+      padding: 10px 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+      align-self: flex-end;
+    }
+  }
+}

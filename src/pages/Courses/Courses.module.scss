@@ -1,0 +1,18 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCol;
+  gap: 30px;
+
+  .title {
+    @include flexBetween;
+    color: $primary;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .courses {
+    @include flexCol;
+    gap: 30px;
+  }
+}

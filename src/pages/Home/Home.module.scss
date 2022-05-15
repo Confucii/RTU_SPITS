@@ -1,0 +1,18 @@
+@import '../../styles/global.scss';
+
+.home {
+  display: grid;
+  grid-template-columns: minmax(35%, 55%) auto;
+  gap: 50px;
+
+  .section {
+    @include flexCol;
+    gap: 20px;
+
+    .title {
+      color: $primary;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}

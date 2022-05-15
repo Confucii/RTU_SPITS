@@ -1,0 +1,48 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCol;
+  gap: 30px;
+
+  .title {
+    color: $primary;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .resultsWrapper {
+    display: flex;
+
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 2px rgb(0 0 0 / 8%);
+
+      .body {
+        .row {
+          .cellHead {
+            text-align: left;
+          }
+
+          .cell,
+          .cellHead {
+            padding: 15px 20px;
+          }
+
+          .cell {
+            .link {
+              text-decoration: none;
+              color: $primary;
+              font-weight: 500;
+            }
+          }
+
+          &:not(:last-child) {
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+}

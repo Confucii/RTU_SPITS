@@ -1,0 +1,37 @@
+@import '../../styles/global.scss';
+
+.content {
+  @include flexCenter;
+  flex-direction: column;
+  gap: 50px;
+
+  .section {
+    @include flexCenter;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+
+    .title {
+      color: $primary;
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    .questions {
+      @include flexCenter;
+      align-items: flex-start;
+      gap: 30px;
+
+      & > * {
+        width: calc(100% / 3 - 30px);
+      }
+    }
+
+    .form {
+      @include flexCenter;
+
+      gap: 20px;
+      width: 50%;
+    }
+  }
+}

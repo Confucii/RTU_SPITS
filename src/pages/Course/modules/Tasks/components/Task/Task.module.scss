@@ -1,0 +1,56 @@
+@import '../../../../../../styles/global.scss';
+
+.task {
+  @include flexCol;
+  gap: 20px;
+  border-top: 2px solid $primary;
+  border-right: 2px solid $primary;
+  padding: 20px 45px 20px 0px;
+  width: calc(100% / 3 - 25px);
+  max-height: 195px;
+
+  .date {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .day {
+      color: $primary;
+      font-size: 45px;
+      font-weight: 600;
+    }
+
+    .monthTime {
+      @include flexCol;
+
+      .month {
+        font-weight: 600;
+      }
+
+      .time {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .info {
+    @include flexCol;
+    gap: 10px;
+    font-weight: 500;
+
+    .type {
+      opacity: 0.6;
+      font-size: 18px;
+    }
+
+    .description {
+      display: -webkit-box;
+      color: $primary;
+      font-size: 20px;
+      max-height: 48px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
+}

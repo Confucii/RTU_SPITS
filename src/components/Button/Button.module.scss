@@ -1,0 +1,18 @@
+@import '../../styles/global.scss';
+
+.btn {
+  background: $primary;
+  color: $white;
+  border: none;
+  outline: none;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    background: $primaryLight;
+  }
+}

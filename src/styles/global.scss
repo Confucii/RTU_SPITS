@@ -1,0 +1,23 @@
+$mainContainer: 1024px;
+$containerHeight: 100px;
+
+$primary: #025551;
+$primaryLight: #097873;
+$white: #fff;
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}

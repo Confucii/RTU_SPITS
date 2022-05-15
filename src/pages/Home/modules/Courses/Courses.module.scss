@@ -1,0 +1,6 @@
+@import '../../../../styles/global.scss';
+
+.courses {
+  @include flexCol;
+  list-style: none;
+}

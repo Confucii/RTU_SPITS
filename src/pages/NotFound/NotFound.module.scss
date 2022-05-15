@@ -1,0 +1,21 @@
+@import '../../styles/global.scss';
+
+.container {
+  @include flexCenter;
+  height: calc(100% - $containerHeight);
+  flex-direction: column;
+  margin: auto;
+  max-width: $mainContainer;
+  color: $primary;
+
+  .head,
+  .description {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .link {
+    margin-top: 10px;
+    color: $primary;
+  }
+}
